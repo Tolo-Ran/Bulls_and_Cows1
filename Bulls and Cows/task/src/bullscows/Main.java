@@ -5,8 +5,8 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
 
+    public static void main(String[] args) {
         boolean controlFlag = true;
         String code = generateCode();
         int countTurn = 1;
@@ -74,20 +74,13 @@ public class Main {
         return code;
     }
 
-
     public static boolean hasAllUniqueChars (String word) {
-
         HashSet alphaSet=new HashSet();
-
         for(int index=0;index < word.length(); index ++)   {
-
             char c =word.charAt(index);
-
-            // If Hashset's add method return false,that means it is already present in HashSet
             if(!alphaSet.add(c))
                 return false;
         }
-
         return true;
     }
 
